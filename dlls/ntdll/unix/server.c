@@ -1261,7 +1261,7 @@ static const char *init_server_dir( dev_t dev, ino_t ino )
 #ifdef __ANDROID__  /* there's no /tmp dir on Android */
     asprintf( &dir, "%s/.wineserver/server-%s", config_dir, tmp );
 #else
-    asprintf( &dir, "/data/data/com.winlator/files/rootfs/tmp/.wine-%u/server-%s", getuid(), tmp );
+    asprintf( &dir, "/tmp/.wine-%u/server-%s", getuid(), tmp );
 #endif
     return dir;
 }
