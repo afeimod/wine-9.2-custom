@@ -92,7 +92,7 @@
 
 WINE_DEFAULT_DEBUG_CHANNEL(nsi);
 
-#define IFADDRS_PATH "/data/data/com.winlator/files/rootfs/tmp/ifaddrs"
+#define IFADDRS_PATH "/tmp/ifaddrs"
 
 struct if_entry
 {
